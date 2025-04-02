@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hardware Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Gamer's Haven</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Gamer's Haven</h1>
+                <p>Your one-stop shop for the best gaming hardware!</p>
+                <button id="buyNow">Buy Now</button>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="images/gpu.jpg" alt="GPU">
+                    <h3>NVIDIA GeForce RTX 4090</h3>
+                    <p>High-performance GPU for gaming.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/cpu.jpg" alt="CPU">
+                    <h3>Intel Core i9-12900K</h3>
+                    <p>Powerful CPU for demanding games.</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more product items as needed -->
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+            <p>Gamer's Haven is committed to providing top-quality gaming hardware at competitive prices. Our team of experts ensures you find exactly what you need for an immersive gaming experience.</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Gamer's Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
