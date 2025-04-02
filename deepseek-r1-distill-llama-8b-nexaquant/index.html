@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overclock Gaming - High Performance Hardware</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #0a0a0a;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #00cc00;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #00cc00;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+                        url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+
+        .hero-text {
+            color: #ffffff;
+            text-align: left;
+            padding-left: 20px;
+            max-width: 600px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-text p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Products Section */
+        .products-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .product-name {
+            margin: 15px 0;
+        }
+
+        .product-price {
+            color: #00cc00;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #00cc00;
+            color: black;
+            padding: 10px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #008000;
+        }
+
+        /* Features Section */
+        .features {
+            background-color: #0a0a0a;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card h3 {
+            color: #00cc00;
+            margin-bottom: 20px;
+        }
+
+        .feature-card p {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Overclock Gaming</a>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Shop</a>
+                <a href="#features">Features</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Extreme Performance Gaming Hardware</h1>
+            <p>Dive into immersive experiences with cutting-edge components. Elevate your gaming to new heights.</p>
+        </div>
+    </section>
+
+    <section class="products-container" id="products">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixlib=rb-1.2.1" alt="GPU" class="product-image">
+                <h3>NVIDIA RTX 4090</h3>
+                <div class="price">$1999.99</div>
+                <a href="#" class="buy-button">Add to Cart</a>
+            </div>
+            <!-- Add more product cards -->
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose Us?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Free Shipping</h3>
+                <p>Orders over $500 qualify for free shipping across the US and Canada.</p>
+            </div>
+            <!-- Add more feature cards -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Overclock Gaming. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Hero text hover effect
+        const heroText = document.querySelector('.hero-text');
+        heroText.addEventListener('click', function() {
+            this.style.transition = 'opacity 0.5s';
+            this.style.opacity = '0';
+        });
+    </script>
+</body>
+</html>
